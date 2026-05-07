@@ -6,7 +6,7 @@ A collection of my web development practice, notes, and projects while learning:
 - CSS
 - JavaScript
 
-## 📁 Structure
+## 📁 Structures
 
 ```bash
 HTML/
