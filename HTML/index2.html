@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        fieldset{
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        label{
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea{
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            width: 250px;
+        }
+
+        textarea{
+            resize: vertical;
+        }
+
+        .gender-group input{
+            width: auto;
+        }
+
+        input[type="submit"]{
+            width: 120px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <h1>Complex Form</h1>
+
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="abc@gmail.com" required><br>
+
+        <label for="phone">Phone No:</label><br>
+        <input type="tel" id="phone"><br>
+
+        <label for="dob">Choose Your Birthday:</label><br>
+        <input type="date" id="dob"><br>
+
+        <label>Gender:</label><br>
+
+        <div class="gender-group">
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+
+            <input type="radio" id="others" name="gender">
+            <label for="others">Others</label>
+        </div>
+
+        <br>
+
+        <label for="country">Country:</label><br>
+
+        <select name="country" id="country">
+            <option value="">--Select Country--</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <br>
+
+        <label for="resume">Upload Resume:</label><br>
+        <input type="file" id="resume">
+
+    </fieldset>
+
+    <!-- Other Information -->
+    <fieldset>
+
+        <legend>Other Information</legend>
+
+        <label for="comments">Comments:</label><br>
+
+        <textarea id="comments" rows="5" cols="30"></textarea>
+
+        <br>
+
+        <input type="checkbox" id="agree">
+
+        <label for="agree">
+            I am ready to enter
+        </label>
+
+    </fieldset>
+
+    <input type="submit" value="Enter">
+
+</form>
+
+</body>
+</html>
