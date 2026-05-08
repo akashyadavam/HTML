@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table box</title>
+    <style>
+     table,th,td{
+            border: solid,1px; 
+            border-collapse: collapse;    
+            }
+               tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+td:nth-child(odd) {
+  background-color: rgba(174, 150, 212, 0.4);
+}
+th:nth-child(even) {
+  background-color: rgba(175, 150, 212, 0.831);
+}
+       
+            </style>
+</head>
+<body>
+    <!-- horizontal -->
+    <table style width="100%">
+        <thead>
+            <tr>
+                <th style width="90%"> 
+                <th>last name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>KKKK</td>
+                <td>LLL</td>
+                <td>HFJ</td>
+             </tr>
+         </tfoot>
+         </table>
+
+         <hr>
+         <!-- vertical -->
+
+          <table style width="100%">
+        <thead>
+            <tr>
+              <th>name</th> 
+                <th>last name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style height="100px">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>KKKK</td>
+                <td>LLL</td>
+                <td>HFJ</td>
+             </tr>
+         </tfoot>
+         </table>
+</body>
+</html>
