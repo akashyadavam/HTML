@@ -7,7 +7,7 @@ A collection of my web development practice, notes, and projects while learning:
 
 ## 📁 Structures
 
-```bash
+
 HTML/
 Project/
 
